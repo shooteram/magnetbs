@@ -1,0 +1,13 @@
+.magnet-btn {
+    margin: 0 10px 3px 0;
+}
+
+.item_season {
+    position: relative;
+}
+
+.season-magnet-btn {
+    position: absolute;
+    right: 7px;
+    top: 1px;
+}

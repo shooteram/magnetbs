@@ -11,3 +11,9 @@
     right: 7px;
     top: 1px;
 }
+
+.episode-magnet-btn img {
+    padding-right: 1px;
+    margin-top: -6px;
+    margin-left: 6px;
+}

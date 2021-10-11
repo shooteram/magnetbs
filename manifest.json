@@ -1,26 +1,26 @@
 {
     "manifest_version": 3,
     "name": "magnetbs",
-    "version": "1.4",
+    "version": "1.5",
+    "description": "add a link to magnetdl for tv shows' episodes on betaseries",
     "action": {
         "default_icon": {
-            "16": "images/icon16.png",
-            "24": "images/icon24.png",
-            "32": "images/icon32.png",
-            "48": "images/icon48.png",
-            "128": "images/icon128.png"
+            "16": "images/icon16-dark.png",
+            "24": "images/icon24-dark.png",
+            "32": "images/icon32-dark.png",
+            "48": "images/icon48-dark.png",
+            "128": "images/icon128-dark.png"
         },
         "default_title": "magnetbs"
     },
-    "default_locale": "en",
-    "description": "add a link to magnetdl for tv shows' episodes on betaseries",
     "icons": {
-        "16": "images/icon16.png",
-        "24": "images/icon24.png",
-        "32": "images/icon32.png",
-        "48": "images/icon48.png",
-        "128": "images/icon128.png"
+        "16": "images/icon16-dark.png",
+        "24": "images/icon24-dark.png",
+        "32": "images/icon32-dark.png",
+        "48": "images/icon48-dark.png",
+        "128": "images/icon128-dark.png"
     },
+    "default_locale": "en",
     "content_scripts": [
         {
             "matches": [
@@ -32,7 +32,18 @@
             "js": [
                 "lib/run.js"
             ]
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "lib/toggle-icon.js"
+            ]
         }
     ],
+    "background": {
+        "service_worker": "lib/background.js"
+    },
     "author": "alex <shooteram@pm.me>"
 }
